@@ -65,6 +65,9 @@ map <Leader>lp <ESC>:LivedownPreview<CR>
 map <Leader>lk <ESC>:LivedownKill<CR>
 map <Leader>lt <ESC>:LivedownToggle<CR>
 
+" error disable(for docker)
+map <F5> :wall!<CR>:!sbcl --load foo.cl<CR><CR>
+
 " NerdTree setting
 let NERDTreeMapActivateNode='<space>'
 
