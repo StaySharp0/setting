@@ -41,6 +41,8 @@ set nu
 set autoindent
 set shiftwidth=4
 set mouse=a
+set fileencodings=utf8,euc-kr
+set encoding=utf-8
 
 set clipboard=unnamedplus
 
