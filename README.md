@@ -2,7 +2,14 @@
 vim, tmux setting etc...
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-:PluginInstall or vim +PluginInstall +qall 
+:PluginInstall or vim +PluginInstall +qall
+
+
+## Docker
+
+docker build -t "staysharp0/workspace" .
+docker run -i -t -p 7700-7799:7700-7799 "staysharp0/workspace" /bin/bash
+
 
 ## vim key mapping
 **$** 는 줄 끝으로 이동하고 명령 모드로 유지됩니다.
