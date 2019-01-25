@@ -1,12 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" {rtp}/autoload/has.vim
-function! has#colorscheme(name)
-    pat = 'colors/'.a:name.'.vim'
-    return !empty(globpath(&rtp, pat))
-endfunction
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -38,9 +32,10 @@ Plugin 'shime/vim-livedown'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-if has#colorscheme('jellybeans')
-    color jellybeans
+if filereadable( expand("$HOME/.vim/colors/jellybeans.vim") )
+	colorscheme jellybeans
 endif
+
 
 set hlsearch
 set softtabstop=4
