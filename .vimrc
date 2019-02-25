@@ -19,13 +19,13 @@ Plugin 'jelera/vim-javascript-syntax'		" JS syntax
 Plugin 'octol/vim-cpp-enhanced-highlight'	" C & C++  syntax
 
 Plugin 'nanotech/jellybeans.vim'
-Plugin 'wkentaro/conque.vim'
-Plugin 'Lokaltog/vim-easymotion'			" Cursor Move
+" Plugin 'wkentaro/conque.vim'
+" Plugin 'Lokaltog/vim-easymotion'			" Cursor Move
 " Plugin 'FuzzyFinder'						" File Finder
-Plugin 'majutsushi/tagbar'					" Tag viewer
-Plugin 'wesleyche/SrcExpl'					" Vim의 커서가 위치한 변수의 선언 위치나 함수의 정의 부분을 보여주는 Plugin.
-Plugin 'Valloric/YouCompleteMe'				" Code 자동완성 Plugin
-Plugin 'ludovicchabant/vim-gutentags'		" Ctag 파일을 관리하는 Plugin
+" Plugin 'majutsushi/tagbar'					" Tag viewer
+" Plugin 'wesleyche/SrcExpl'					" Vim의 커서가 위치한 변수의 선언 위치나 함수의 정의 부분을 보여주는 Plugin.
+" Plugin 'Valloric/YouCompleteMe'				" Code 자동완성 Plugin
+" Plugin 'ludovicchabant/vim-gutentags'		" Ctag 파일을 관리하는 Plugin
 " Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'shime/vim-livedown'
 
