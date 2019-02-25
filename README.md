@@ -8,8 +8,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ## Docker
 cd setting  
 docker build -t "staysharp0/workspace" .  
-docker run -i -t -p 7700-7799:7700-7799 --name [NAME] "staysharp0/workspace" /bin/bash  
-
+docker run -i -t -v /d/workspace:/data -p 7700-7799:7700-7799 --name [NAME] "staysharp0/workspace"  
 
 ## vim key mapping
 **$** 는 줄 끝으로 이동하고 명령 모드로 유지됩니다.  
