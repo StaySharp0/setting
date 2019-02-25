@@ -32,7 +32,7 @@ Plugin 'shime/vim-livedown'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-if filereadable( expand("$HOME/.vim/colors/jellybeans.vim") )
+if !empty("~/.vim/bundle/jellybeans.vim/")
 	colorscheme jellybeans
 endif
 
@@ -64,9 +64,18 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+
+" LiveDown __________________________________________
+" Installation : npm install -g livedown
+
+let g:livedown_open = 0
+let g:livedown_port = 7799
+
 map <Leader>lp <ESC>:LivedownPreview<CR>
 map <Leader>lk <ESC>:LivedownKill<CR>
 map <Leader>lt <ESC>:LivedownToggle<CR>
+
+" ___________________________________________________
 
 " error disable(for docker)
 map <F5> :wall!<CR>:!sbcl --load foo.cl<CR><CR>
