@@ -32,7 +32,7 @@ Plugin 'shime/vim-livedown'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-if !empty("~/.vim/bundle/jellybeans.vim/")
+if isdirectory($HOME . "/.vim/bundle/jellybeans.vim/")
 	colorscheme jellybeans
 endif
 
