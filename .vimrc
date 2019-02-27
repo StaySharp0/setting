@@ -9,9 +9,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Plugin
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'             " git 변경사항 표시
+Plugin 'tpope/vim-fugitive'                 " git branch 표시
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 
@@ -40,7 +41,6 @@ if isdirectory($HOME . "/.vim/bundle/jellybeans.vim/")
 	colorscheme jellybeans
 endif
 
-
 set hlsearch
 set softtabstop=4
 set tabstop=4
@@ -68,8 +68,15 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" vim-airline _____________________________________________________
 
-" LiveDown __________________________________________
+set laststatus=2	                         " turn on bottom bar
+let g:airline#extensions#tabline#enabled = 1 " turn on buffer list
+let g:airline_powerline_fonts =	1
+let g:airline_theme = 'solarized'
+" _________________________________________________________________
+
+" LiveDown ________________________________________________________
 " Installation : npm install -g livedown
 
 let g:livedown_open = 0
@@ -79,7 +86,7 @@ map <Leader>lp <ESC>:LivedownPreview<CR>
 map <Leader>lk <ESC>:LivedownKill<CR>
 map <Leader>lt <ESC>:LivedownToggle<CR>
 
-" ___________________________________________________
+" __________________________________________________________________
 
 " error disable(for docker)
 " map <F5> :wall!<CR>:!sbcl --load foo.cl<CR><CR>
